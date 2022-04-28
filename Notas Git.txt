@@ -1,0 +1,23 @@
+git clone <REPO_URL>: Descargar el repositorio de la nube y crear una copia de la rama main localmente
+ejemplo: git clone https://github.com/natalyjoanna/git-411-2022.git
+
+remote / origin
+ejemplo: origin/main
+
+local
+ejemplo: main
+
+git status: nos permite conocer el status de sincronizacion de la rama remota y local, tambien nos muestra si hay archivos modificados y pendientes de sincronizar
+
+Pasos para subir cambios:
+1. Preparar (o hacer track/stage) de los archivos que queremos subir.
+	- git add "NOMBRE_ARCHIVO"
+	* nota: para hacer "unstage" de un archivo usamos el comando git restore --staged "NOMBRE_ARCHIVO"
+	- git add . : Prepara todos los archivos que aun no se ha subido
+
+2. Crear un commit
+	- Un commit es un conjunto de cambios con un mensaje que los describa
+	- git commit -m "MENSAJE"
+
+3. Sincronizamos la rama remota con los cambios en la rama local
+	- git push
